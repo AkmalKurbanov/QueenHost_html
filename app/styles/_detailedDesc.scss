@@ -1,0 +1,177 @@
+.flabDetailedDesc {
+  overflow: hidden;
+  &__rateTable {
+    box-shadow: 0px rem(3px) rem(16px) 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: rem(50px);
+    @media (max-width: 991.98px) {
+      box-shadow: none;
+      margin-bottom: rem(0px);
+    }
+  }
+  &__item {
+    border-right: rem(1px) solid #e7e7e7;
+    min-height: rem(245px);
+    @media (max-width: 1199.98px) {
+      min-height: rem(275px);
+    }
+    @media (max-width: 991.98px) {
+      max-width: rem(280px);
+      width: 100%;
+      margin: 0 auto rem(30px);
+      border: rem(1px) solid #e7e7e7;
+      box-shadow: 0px rem(3px) rem(16px) 0 rgba(0, 0, 0, 0.08);
+    }
+    &--lastItem {
+      border-right: none;
+      @media (max-width: 991.98px) {
+        border: rem(1px) solid #e7e7e7;
+      }
+    }
+  }
+  &__logo {
+    min-height: rem(245px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1199.98px) {
+      min-height: rem(275px);
+    }
+  }
+  &__logoWrap {
+    max-width: rem(140px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+  &__tarif {
+    border-bottom: rem(1px) solid #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 991.98px) {
+      border-right: none;
+    }
+    .flabRate__caption {
+      @media (max-width: 1199.98px) {
+        padding-top: rem(10px);
+      }
+    }
+  }
+  &__tarifPrice {
+    border-bottom: rem(1px) solid #e7e7e7;
+    border-right: rem(1px) solid #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1199.98px) {
+      border-right: none;
+    }
+    &--secondPrice {
+      border-right: none;
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    box-shadow: 0px rem(3px) rem(16px) 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: rem(50px);
+    @media (max-width: 991.98px) {
+      margin-bottom: rem(30px);
+      font-size: rem(13px);
+    }
+    @media (max-width: 767.98px) {
+      table-layout: auto;
+      margin-bottom: rem(10px);
+    }
+    @media (max-width: 575.98px) {
+      box-shadow: none;
+    }
+    th,
+    td {
+      border-left: rem(1px) solid #e7e7e7;
+      text-align: center;
+      @media (max-width: 767.98px) {
+        padding: 5px;
+      }
+      @media (max-width: 575.98px) {
+        border-left: none;
+        border-bottom: rem(1px) solid #e7e7e7;
+      }
+      &:first-child {
+        text-align: left;
+        border-left: none;
+        padding-left: rem(15px);
+        @media (max-width: 767.98px) {
+          padding-left: rem(10px);
+        }
+        @media (max-width: 575.98px) {
+          text-align: right;
+          padding-left: rem(5px);
+          border-left: none;
+        }
+      }
+      @media (max-width: 575.98px) {
+        display: block;
+        width: 100%;
+        padding: 5px;
+      }
+    }
+    td[data-header-title]:before {
+      @media (max-width: 575.98px) {
+        content: attr(data-header-title)':';
+        display: block;
+        color: #666;
+        float: left;
+        width: 50%;
+        text-align: left;
+      }
+    }
+    thead {
+      @media (max-width: 575.98px) {
+        display: none;
+      }
+      tr {
+        height: rem(50px);
+        th {
+          text-align: center;
+          font-weight: 400;
+          border-bottom: rem(1px) solid #e7e7e7;
+          i {
+            color: $mc;
+          }
+        }
+      }
+    }
+    tbody {
+      @media (max-width: 575.98px) {
+        border-collapse: collapse;
+        display: block;
+      }
+      tr {
+        height: rem(50px);
+        border-bottom: rem(1px) solid #e7e7e7;
+        @media (max-width: 575.98px) {
+          margin-bottom: 20px;
+          display: block;
+          height: auto;
+          box-shadow: 0px rem(1px) rem(10px) 0 rgba(0, 0, 0, 0.08);
+        }
+        td {
+          i {
+            color: $mc;
+          }
+          @media (max-width: 575.98px) {
+            clear: both;
+            overflow: hidden;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

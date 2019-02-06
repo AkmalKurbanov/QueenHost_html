@@ -1,0 +1,214 @@
+.flabRate {
+  background-color: $tc;
+  padding-bottom: rem(40px);
+  overflow: hidden;
+  @media (max-width: 991.98px) {
+    padding-bottom: rem(30px);
+  }
+  &__choosePanel {
+    max-width: rem(309px);
+    width: 100%;
+    min-height: rem(53px);
+    border-radius: rem(26px);
+    background-color: #ffffff;
+    box-shadow: 0 0 rem(60px) 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto rem(60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-tabs .nav-item {
+    margin: 0;
+    width: 49%;
+    text-align: center;
+    min-height: rem(43px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link {
+    padding: 0;
+    transition: all .3s;
+    width: 100%;
+    max-width: 96%;
+    min-height: rem(43px);
+    border-radius: rem(26px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    &:hover {
+      background-color: $mc;
+      color: #ffffff;
+    }
+  }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    border: none;
+    background-color: $mc;
+    color: #ffffff;
+  }
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link:focus {
+    border-color: transparent;
+  }
+  &__list {
+    padding-bottom: rem(50px);
+    @media (max-width: 991.98px) {
+      padding-bottom: 0;
+    }
+  }
+  &__item {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: rem(40px);
+    position: relative;
+    @media (max-width: 991.98px) {
+      max-width: rem(360px);
+      width: 100%;
+      margin: 0 auto rem(30px);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      max-width: rem(220px);
+      width: 100%;
+      min-height: rem(220px);
+      border-radius: 100%;
+      right: -60px;
+      bottom: -80px;
+      background-color: #eaf7ff;
+    }
+  }
+  &__statusImgWrap {
+    background-color: #eaf7ff;
+    max-width: rem(214px);
+    width: 100%;
+    height: rem(214px);
+    border-radius: 100%;
+    margin-left: rem(-50px);
+    margin-top: rem(-15px);
+    overflow: hidden;
+    display: inline-block;
+    @media (max-width: 767.98px) {
+      max-width: rem(150px);
+      height: rem(150px);
+      margin-left: rem(-30px);
+    }
+  }
+  &__imgWrap {
+    margin: auto;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    &--firstRate,
+    &--secondRate {
+      max-width: rem(100px);
+      margin-right: rem(40px);
+      @media (max-width: 767.98px) {
+        margin-right: rem(30px);
+        max-width: rem(70px);
+      }
+    }
+    &--thirdtRate {
+      max-width: rem(150px);
+      margin-right: rem(40px);
+    }
+  }
+  &__itemDesc {
+    margin-left: rem(5px);
+    display: inline-block;
+    vertical-align: top;
+    @media (max-width: 575.98px) {
+      margin-left: rem(20px);
+    }
+  }
+  &__priceWrap {
+    font-size: rem(18px);
+    &--detailPriceWrap {
+      margin: 0;
+    }
+  }
+  &__caption {
+    position: relative;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: rem(25px);
+    text-transform: uppercase;
+    font-size: rem(20px);
+    padding-bottom: rem(15px);
+    margin-bottom: rem(20px);
+    @media (max-width: 1199.98px) {
+      font-size: rem(16px);
+      padding-bottom: rem(5px);
+      margin-bottom: rem(10px);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $sc;
+      max-width: rem(50px);
+      width: 100%;
+      min-height: rem(1px);
+    }
+  }
+  &__price {
+    font-size: rem(40px);
+    color: #000000;
+    @media (max-width: 1199.98px) {
+      font-size: rem(25px);
+    }
+    &--detailPrice {
+      font-size: rem(30px);
+    }
+  }
+  &__currency {
+    font-size: rem(25px);
+    color: #000000;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: rem(1px);
+      background-color: $sc;
+      bottom: 0;
+    }
+    &--detailCurrency {
+      font-size: rem(16px);
+    }
+  }
+  &__itemList {
+    margin: 0;
+    padding: 0;
+    padding-bottom: rem(60px);
+    padding-top: rem(20px);
+    li {
+      list-style: none;
+      display: flex;
+      margin-bottom: rem(5px);
+      span {
+        max-width: 50%;
+        width: 100%;
+        &:first-child {
+          padding-left: 17%;
+        }
+      }
+    }
+  }
+  &__additional {
+    text-align: center;
+    p {
+      margin: 0;
+      font-size: rem(18px);
+      color: #000000;
+      @media (max-width: 991.98px) {
+        font-size: rem(16px);
+      }
+    }
+  }
+}

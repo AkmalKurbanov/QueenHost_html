@@ -1,0 +1,29 @@
+.flabAbout {
+  background-color: $tc;
+  padding-bottom: 5%;
+  overflow: hidden;
+  @media (max-width: 1199.98px) {
+    padding-bottom: 3%;
+  }
+  &__desc {
+    position: relative;
+  }
+  &__imgWrap {
+    position: absolute;
+    max-width: 36%;
+    width: 100%;
+    right: 4%;
+    @media (max-width: 1199.98px) {
+      right: 1%;
+    }
+    @media (max-width: 991.98px) {
+      position: relative;
+      max-width: rem(600px);
+      margin: 0 auto rem(30px);
+    }
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
